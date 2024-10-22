@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"  content="width-device", initial-scale="1.0">
+        <title style="color: black;">GM Computer Lab</title>
+        <link rel="stylesheet" href="css4.css">
+   </head>
+   <body style="background-color: yellow">
+   <div>
+        <article>
+            <header>
+                 <h1 style="color:darkred;">Contact us</h1>
+                 <p style="color: darkred;">Physical Address Strydkraal A Ga-Masha 0739</p>
+                 <p style="color: darkred;">Email Address: givenmogowe95@gmail.com</p>
+                 <p style="color: darkred;">Number: 0711553133</p>
+                 <p style="color: darkred;">Province Location: Limpopo</p>
+                 <p>Enter your personal details below to receive more information: </p>
+            </header>
+       </article>
+   </div>   
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSce9r_Qs33HU4nslbZ6QKMVL9iH7qBnlNmid0Ths9B3qCF8aQ/viewform?usp=sf_link">
+        <br><br>
+        <label>Name: </label>
+        <input type="text" id="userName">
+        <br>
+        <label>Email: </label>
+        <input type="text" id="userEmail">
+        <br>
+        <label>Phone Number: </label>
+        <input type="text" id="userPhoneNumber">
+        <br>
+        <label>Message: </label>
+        <textarea id="Message" name="Message" rows="4" cols="50">Enter your Message</textarea>
+        <button type="submit" onclick="check()">Submit</button>
+        <p id="pp">Results</p>
+        <script>
+            function check()
+            {
+                if (document.getElementById("userEmail").value <= 19) 
+                {
+                     document.getElementById("pp").innerHTML="Hello" + document.getElementById("userEmail").value+","
+                }
+                else
+                {
+                    document.getElementById("pp").innerHTML="Hello" + document.getElementById("userEmail").value+","
+                }
+            }
+
+        </script>
+
+
+    </body>
+
+
+
+</html>

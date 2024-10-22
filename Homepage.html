@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="description" content="GM Computerlab offers free classes for computer">
+      <meta name="keywords" content="your, keywords, here">
+      <meta name="author" content="Given Mogowe">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GM Computer Lab</title>
+        <link rel="stylesheet" href="css4.css"> 
+   </head>
+   <body style="background-color:yellow" >
+     <div class>
+     <i class="watermark"><img src="logo computer.png" width="200" height="50" alt="logo"></i>
+     <article>
+        <header>
+        <h1 style="color: darkred;">Welcome to GM Computer Lab and Tech solutions HomePage</h1>
+        <p style="color: darkred;">We at GM Computer Lab we believe that since we live in the fourth industrial revolution our goal is to implement computer labs in schools to be help school learner's. 
+            The aim of this computer lab organisation is to help school kids to learn about the computers before completing matric because 
+            kids struggle to use computers and some they can't afford them which will be difficult for them to learn. 
+            By accomplishing this computer labs it will benefit all the learner's</p>
+        <img src="lab.jpg" width="800" height="200" alt="lab">
+        <nav>
+           <ul>
+              <li><a href="Homepage.html">HomePage</a></li>
+              <li><a href="AboutUS.html">About us at our organisation we make sure that people learn and gain more skills using computers.</a></li>
+              <li><a href="ProductsandServices.html">Services offered</a></li>
+              <li><a href="News.html">News</a></li>
+              <li><a href="CONTACTUS1.html">Contactus</a></li>
+           </ul>
+        </nav>
+        </header>
+     </article>
+     </div>
+    <footer style="color: darkred;">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSf0x0evhsaYgNjBLQnrNe-cfLWwlIjqAU1OqK8rnOClaz_c-w/viewform?usp=sf_link">
+            <br><br>
+            <label>Email: </label>
+            <input type="text" id="userEmail">
+            <br>
+            <button type="submit" onclick="check()">Submit</button>
+            <p id="pp">Newsletter</p>
+        </form>
+        <p>GM Computer Lab 2023 © <span id="currentDate"></span></p>
+    </footer>
+    <script>
+        function check()
+        {
+            if (document.getElementById("userEmail").value <= 19) 
+            {
+                 document.getElementById("pp").innerHTML="Hello" + document.getElementById("userEmail").value+","
+            }
+            else
+            {
+                document.getElementById("pp").innerHTML="Hello" + document.getElementById("userEmail").value+","
+            }
+        }
+
+    </script> 
+     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>"
+     <script src="script.js"></script>
+
+   </body>
+
+
+</html>
